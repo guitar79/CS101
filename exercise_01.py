@@ -31,11 +31,17 @@ def climb_up_4_stairs():
     climb_up_1_stair()
     climb_up_1_stair()
 
-def exercise_2():
+def exercise_1():
     gshs.move()
-    gshs.pick_beeper()
-
-for i in range(6,1,-1):
-    for j in range(i):
-        exercise_2()
     gshs.turn_left()
+    gshs.move()
+    turn_right()
+    gshs.move()
+    turn_right()
+    gshs.move()
+    gshs.turn_left()
+
+for i in range(4):
+    exercise_1()
+gshs.move()
+gshs.pick_beeper()
