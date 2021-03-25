@@ -3,7 +3,7 @@
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 from cs1robots import *
-load_world('worlds/8queens.wld')
+load_world('worlds/harvest1.wld')
 gshs = Robot()
 gshs.set_trace('blue')
 
@@ -11,6 +11,7 @@ def turn_right():
     gshs.turn_left()
     gshs.turn_left()
     gshs.turn_left()
+
 def move_1(n):
     for i in range(n) :
         gshs.move()
@@ -29,8 +30,6 @@ def exercise_2(j, i):
     move_1(j)
     turn_around()
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    while not on_beeper():
-        if frfor j in range(1, 7):
-            exercise_2(j, i)
+for i in range(6):
+    for j in range(1, 7):
+        exercise_2(j, i)
