@@ -30,16 +30,16 @@ def exercise_2(j, i):
     turn_right()
     move_1(j)
     turn_around()
-
+pause_time = 0.5
 while not gshs.on_beeper():
     if gshs.right_is_clear():
         turn_right()
-        gshs.set_pause(0.1)
+        gshs.set_pause(pause_time)
         if gshs.front_is_clear() :
             gshs.move()
-            gshs.set_pause(0.1)
-
+            gshs.set_pause(pause_time)
     else:
         gshs.turn_left()
-        gshs.set_pause(0.1)
+        gshs.set_pause(pause_time)
+    gshs.set_pause(pause_time)
 gshs.pick_beeper()
